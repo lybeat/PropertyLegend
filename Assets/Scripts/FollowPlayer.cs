@@ -74,9 +74,6 @@ public class FollowPlayer : MonoBehaviour
             y = targetY;
         }
 
-        //Debug.Log("targetX: " + targetX + ", targetY: " + targetY);
-        //Debug.Log("x: " + x + ", y: " + y);
-
         Quaternion rotation = Quaternion.Euler(y, x, 0);
         distance = Mathf.SmoothDamp(distance, targetDistance, ref zoomVelocity, 0.5f);
 
